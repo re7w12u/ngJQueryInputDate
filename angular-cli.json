@@ -9,7 +9,12 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+        "../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+        "../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+        "../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+        "../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -18,9 +23,15 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "assets/jquery-ui-1.12.1/jquery-ui.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "assets/jquery-ui-1.12.1/jquery-ui.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

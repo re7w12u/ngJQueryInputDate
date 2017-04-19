@@ -1,0 +1,18 @@
+<p>
+  my-comp works!
+</p>
+<div class="panel panel-default">
+  <div class="input-group">
+     <span class="input-group-addon" id="basic-addon1">Date</span>
+     <input type="date" [ngModel]="myDate | date:'dd/MM/yyyy'" class="form-control" aria-describedby="basic-addon1"/>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="input-group">
+     <span class="input-group-addon" id="basic-addon1">Date</span>
+     <input #inputdate type="text" [ngModel]="myDate | date:'dd/MM/yyyy'" class="form-control" aria-describedby="basic-addon1"/>
+  </div>
+</div>
+  
+<div class="well">{{myDate}}</div>
